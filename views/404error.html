@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 File Not Found</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 6em;
+            margin: 0;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .astronaut {
+            width: 300px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        @keyframes float {
+            0% {
+                transform: translatey(0px);
+            }
+            50% {
+                transform: translatey(-20px);
+            }
+            100% {
+                transform: translatey(0px);
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Error</h2>
+        <p>The page is not available</p>
+        <div class="astronaut">
+            <img src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?t=st=1722834259~exp=1722837859~hmac=a9e17e20fb2dfdd1ed65b66bda30fa9754d0e8777afabeb72bdfb3e3bb3f6cd0&w=1480" alt="Astronaut Floating">
+        </div>
+        <a href="/" class="button">Return to the previous page</a>
+    </div>
+</body>
+</html>
