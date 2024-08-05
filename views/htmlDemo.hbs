@@ -1,162 +1,211 @@
-<div class="row">
-	<main class="col-md-12">
-		<!-- Tables Section -->
-		<div class="py-4">
-			<h2>Course and Student Information</h2>
-			<table class="table table-bordered table-striped table-hover">
-				<caption>Table 1: Course Details</caption>
-				<thead>
-					<tr>
-						<th rowspan="2">Course Name</th>
-						<th colspan="2">Details</th>
-					</tr>
-					<tr>
-						<th>Instructor</th>
-						<th>Duration</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>WEB700</td>
-						<td>John Doe</td>
-						<td>12 weeks</td>
-					</tr>
-					<tr>
-						<td>JS Fundamentals</td>
-						<td>Jane Smith</td>
-						<td>8 weeks</td>
-					</tr>
-					<tr>
-						<td>Advanced CSS</td>
-						<td>Emily Davis</td>
-						<td>10 weeks</td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<td colspan="3">For more course details, visit our <a href="/courses">Courses</a> page.</td>
-					</tr>
-				</tfoot>
-			</table>
-		
-			<table class="table table-bordered table-striped table-hover">
-				<caption>Table 2: Student Information</caption>
-				<thead>
-					<tr>
-						<th>Student ID</th>
-						<th>Name</th>
-						<th>Enrolled Course</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1001</td>
-						<td>Alex Johnson</td>
-						<td rowspan="2">WEB700</td>
-					</tr>
-					<tr>
-						<td>1002</td>
-						<td>Maria Garcia</td>
-					</tr>
-					<tr>
-						<td colspan="2">Total Enrolled Students</td>
-						<td>2</td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<td colspan="3">For more student details, visit our <a href="/students">Students</a> page.</td>
-					</tr>
-				</tfoot>
-			</table>
-		
-			<p>This section demonstrates the use of HTML tables with various elements such as caption, thead, tbody, tfoot, rowspan, colspan, etc. It showcases detailed information about courses and students.</p>
-		</div>									
-	
-		<!-- Lists Section -->
-		<div class="py-4">
-			<h2>Lists Section</h2>
-			<ul class="styled-list">
-				<li>Course: WEB700
-					<ul>
-						<li>Instructor: John Doe</li>
-						<li>Duration: 12 weeks</li>
-						<li>Topics Covered:
-							<ul>
-								<li>HTML5</li>
-								<li>CSS3</li>
-								<li>JavaScript</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>Course: JS Fundamentals
-					<ul>
-						<li>Instructor: Jane Smith</li>
-						<li>Duration: 8 weeks</li>
-						<li>Topics Covered:
-							<ul>
-								<li>Variables</li>
-								<li>Functions</li>
-								<li>DOM Manipulation</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>Course: Advanced CSS
-					<ul>
-						<li>Instructor: Emily Davis</li>
-						<li>Duration: 10 weeks</li>
-						<li>Topics Covered:
-							<ul>
-								<li>Flexbox</li>
-								<li>Grid</li>
-								<li>Animations</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		
-			<p>This section showcases an unordered list with nested lists and various list items containing diverse content related to courses and students.</p>
-		</div>
-		
-	
-		<!-- Images Section -->
-		<div class="py-4">
-			<h2>Images Section</h2>
-			<div class="image-container">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder in halfpipe">
-				<img src="https://images.pexels.com/photos/19544005/pexels-photo-19544005/free-photo-of-skyscrapers-in-downtown-against-blue-sky.jpeg" alt="Skyscrapers in Downtown against Blue Sky">
-				<img src="https://images.pexels.com/photos/111116/pexels-photo-111116.jpeg" alt="High Angle View of High Building during Daytime">
-			</div>
-			<p>This section features three images with descriptive "alt" text.</p>
-		</div>
-	
-		<!-- Audio Section -->
-		<div class="py-4">
-			<h2>Audio Section</h2>
-			<audio controls>
-				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
-				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg" type="audio/ogg">
-				Your browser does not support the audio element.
-			</audio>
-	
-			<p>This section includes an HTML5 audio player with sample audio files.</p>
-		</div>
-	
-		<!-- Video Section -->
-		<div class="py-4">
-			<h2>Video Section</h2>
-			<video controls>
-				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
-				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.ogg" type="video/ogg">
-				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.webm" type="video/webm">
-				Your browser does not support the video element.
-			</video>
-	
-			<p>This section showcases an HTML5 video player with sample video files.</p>
-		</div>
-	</main>				
-</div>
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/theme.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Emad Chowdhury</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+					<li class="nav-item"><a class="nav-link" href="/students/add">Add Student</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+
+
+
+					
+					<article>
+                        <header>
+                            <h1>HTML5 Demo</h1>
+                        </header><br>
+                        <article>
+                            <h1>
+                                Welcome to the HTML5 demo section. 
+                            </h1><br>
+                            div class="container">
+                            <h1>HTML Demo</h1>
+                    
+                            <h2>NBA Season Stats</h2>
+                            <table class="table">
+                                <caption>In the latest NBA season, Kyrie Irving demonstrated his scoring prowess with an average of 27.1 points per game (PPG), coupled with 5.5 assists (APG) and 4.8 rebounds (RPG). LeBron James continued to defy age with 25.0 PPG, 7.8 RPG, and 6.8 APG, showcasing his all-around impact on the court. Meanwhile, Stephen Curry remained a sharpshooting force, averaging 29.4 PPG, 6.3 APG, and 5.2 RPG, while leading the league in three-pointers made per game, reaffirming his status as one of the greatest shooters in NBA history.</caption>
+                                
+                                <thead>
+                                    <tr>
+                                        <th>Player Name</th>
+                                        <th>Games Played</th>
+                                        <th>Total Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Stephen Curry</td>
+                                        <td>55</td>
+                                        <td>1234</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lebron James</td>
+                                        <td>58</td>
+                                        <td>5432</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kyrie Irving</td>
+                                        <td>46</td>
+                                        <td>6543</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td><b>Total</b></td>
+                                        <td>153</td>
+                                        <td>13564</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                    
+                            <table class="table">
+                                <caption>In the latest NBA season, Kyrie Irving, LeBron James, and Stephen Curry each showcased their playmaking abilities. Irving consistently facilitated his team's offense with his adept passing. LeBron continued to excel in creating opportunities for his teammates, leveraging his vision and experience. Curry, known for his scoring, also contributed significantly to his team's ball movement and offensive flow with his assists.</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Player Name</th>
+                                        <th>Games Played</th>
+                                        <th>Assists</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Stephen Curry</td>
+                                        <td>55</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lebron James</td>
+                                        <td>58</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kyrie Irving</td>
+                                        <td>46</td>
+                                        <td>300</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>153</td>
+                                        <td>600</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <p>This section demonstrates HTML tables with various elements like caption, thead, tbody, tfoot, th, td, tr, rowspan, and colspan.</p>
+                    
+                        <br>
+            
+                        <section id="new-elements">
+                            <h2>New Semantic Elements</h2>
+                            <p>HTML5 introduced several new semantic elements that provide better structure and meaning to web content. These include:</p>
+                            <ul>
+                                <li><code>&lt;header&gt;</code>: Represents introductory content or a set of navigational links.</li>
+                                <li><code>&lt;nav&gt;</code>: Defines a set of navigation links.</li>
+                                <li><code>&lt;article&gt;</code>: Represents a self-contained piece of content that could be distributed independently.</li>
+                                <li><code>&lt;section&gt;</code>: Defines a section in a document.</li>
+                                <li><code>&lt;footer&gt;</code>: Represents footer content, typically containing information about the author or copyright information.</li>
+                            </ul>
+                        </section>
+
+                        <section id="multimedia">
+                            <h2>Multimedia Elements</h2>
+                            <p>HTML5 makes it easy to add multimedia content to web pages. Some of the new multimedia elements include:</p>
+                            <ul>
+          
+                                <li><code>&lt;audio&gt;</code>: Used to embed sound content.</li>
+                                <li><code>&lt;video&gt;</code>: Used to embed video content.</li>
+                                <li><code>&lt;canvas&gt;</code>: A container for graphics, which you can draw with JavaScript.</li>
+                            </ul>
+            
+                         <div class="demo">
+                        <h3>Audio Example</h3>
+                        <audio controls>
+                            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+            
+
+                    <div class="demo">
+                        <h3>Video Example</h3>
+                        <video width="320" height="240" controls>
+                            <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </section>
+
+               
+                <section id="forms">
+                    <h2>Enhanced Forms</h2>
+                    <p>HTML5 has brought new attributes and input types that make form validation and user input easier and more reliable:</p>
+                    <ul>
+                       
+                        <li><code>placeholder</code>: Specifies a short hint that describes the expected value of an input field.</li>
+                        <li><code>required</code>: Specifies that an input field must be filled out before submitting the form.</li>
+                        <li><code>email</code> and <code>url</code>: New input types that automatically validate the entered data.</li>
+                    </ul>
+              
+                    <div class="demo">
+                        <h3>Form Example</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="website">Website:</label>
+                                <input type="url" class="form-control" id="website" placeholder="https://example.com" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </section>
+
+          
+                <section id="image-section">
+                    <h2>Image Example</h2>
+                    <p>Below is an example of an image embedded in the HTML:</p>
+            
+                    <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/11/what-is-html-3.webp" alt="html">
+                </section>
+
+
+
+				</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
